@@ -1,0 +1,3 @@
+﻿  ExoWindows_Processus_Pair.cpp
+D:\ProjetsC++2007\Exo_Windows_Processus\ExoWindows_Processus_Pair\ExoWindows_Processus_Pair\ExoWindows_Processus_Pair.cpp(12,1): warning C4326: le type de retour de 'main' doit être 'int' au lieu de 'void'
+  ExoWindows_Processus_Pair.vcxproj -> D:\ProjetsC++2007\Exo_Windows_Processus\ExoWindows_Processus_Pair\x64\Debug\ExoWindows_Processus_Pair.exe

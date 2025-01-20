@@ -1,0 +1,40 @@
+Adherent (Id_adherent , Adherent_nom)
+1 , "Sylvain"
+2, "Thomas"
+3, "Joamie"
+4, "Tetu"
+5, "Benoit"
+6, "Elias"
+7, "Mariana"
+8, "Anicet"
+9, "Louis"
+
+Emprunt (Ouvrage_code_barre,Id_adherent,Emprunt_historique)
+10025,1,5
+10035,2,15
+54213,3,3
+
+Ouvrage (Ouvrage_code_barre,Ouvrage_mot_cles,Ouvrage_titre,Id_rayon)
+10025,"Un livre biographique","La vie de Jean",1
+10035,"Un livre sur la faune","Les lions de la savane",2
+54213,"Un livre romantique","La rose du soir",3
+65241,"Un livre de cape et d'épée","les 5 mousquetaires",3
+98545,"Un livre de Science-fiction","La planéte au loins",4
+
+Ecrit(Ouvrage_code_barre,Id_auteur)
+10025,1
+10035,2
+54213,1
+65241,3
+98545,3
+
+Auteur(Id_auteur,Auteur_nom)
+1,"Jhon Doe"
+2,"Le grand"
+3,"Yves Duchêne"
+
+Rayon(Id_rayon,Rayon_nom)
+1,"Biographie"
+2,"Zoologie"
+3,"Roman"
+4,"Science-fiction"

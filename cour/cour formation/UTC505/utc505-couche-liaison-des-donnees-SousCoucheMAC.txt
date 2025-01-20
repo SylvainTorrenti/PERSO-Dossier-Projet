@@ -1,0 +1,91 @@
+1. La couche de liaison des données (Data Link Layer) : Introduction
+
+La couche de liaison des données est la deuxième couche dans le modèle OSI (Open Systems Interconnection). Elle est responsable de la transmission fiable des données à travers un lien physique entre deux appareils. Son rôle est de transformer un support physique brut en un lien apparemment sans erreur entre deux nœuds de réseau directement connectés.
+1.1 Fonctions principales de la couche de liaison :
+
+    Encapsulation des données : Divise les paquets (issus de la couche réseau) en trames (frames) pour être envoyés sur le réseau.
+    Contrôle de l'accès au support : Gère l’accès au canal physique de communication partagé (comme un câble ou un réseau sans fil).
+    Contrôle d'erreurs : Détecte et corrige les erreurs sur le lien de communication.
+    Contrôle de flux : Gère le débit d'envoi des données pour éviter que le récepteur soit submergé.
+
+2. La sous-couche MAC (Media Access Control)
+
+La couche de liaison des données se décompose en deux sous-couches :
+
+    La sous-couche LLC (Logical Link Control) : Gère les protocoles de communication.
+    La sous-couche MAC (Media Access Control) : Contrôle l’accès au média de transmission.
+
+2.1 Qu'est-ce que la sous-couche MAC ?
+
+La sous-couche MAC se charge de déterminer comment plusieurs appareils partagent un même support physique de communication, en définissant des protocoles qui régulent l'accès au média. Elle assure donc que les données sont envoyées de façon ordonnée et sans collisions.
+3. Fonctions de la sous-couche MAC
+3.1 Accès au support partagé
+
+Dans de nombreux réseaux, plusieurs dispositifs (ordinateurs, imprimantes, etc.) doivent partager le même support physique (comme un câble ou un réseau Wi-Fi). La sous-couche MAC gère cet accès au support. Par exemple :
+
+    Si plusieurs appareils essaient d'envoyer des données simultanément sur un réseau Ethernet, une collision peut se produire. La sous-couche MAC doit minimiser ces collisions.
+
+3.2 Détection et gestion des collisions (Ethernet CSMA/CD)
+
+Dans les réseaux filaires (comme Ethernet), la méthode d'accès utilisée est souvent CSMA/CD (Carrier Sense Multiple Access with Collision Detection).
+
+    CSMA (Carrier Sense Multiple Access) : Chaque appareil vérifie si le canal est libre avant d'envoyer des données.
+    CD (Collision Detection) : Si deux appareils envoient des données simultanément, une collision est détectée et les appareils doivent arrêter et recommencer à transmettre après un délai aléatoire.
+
+3.3 Gestion des collisions dans les réseaux sans fil (CSMA/CA)
+
+Dans les réseaux sans fil (comme le Wi-Fi), la méthode utilisée est CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance).
+
+    Ici, au lieu de détecter une collision après qu'elle se soit produite, les appareils essaient de l'éviter en réservant le canal avant d'envoyer des données.
+
+4. Adresses MAC (MAC Address)
+
+La sous-couche MAC utilise les adresses MAC pour identifier de manière unique chaque appareil sur un réseau local. Une adresse MAC est une chaîne de 48 bits (6 octets), souvent représentée en hexadécimal (par exemple : 00:1A:2B:3C:4D:5E).
+
+    Adresse MAC source : Adresse de l’appareil qui envoie la trame.
+    Adresse MAC destination : Adresse de l’appareil destinataire.
+
+Les adresses MAC sont uniques au niveau mondial et sont généralement intégrées dans la carte réseau (NIC - Network Interface Card) des appareils.
+5. Les protocoles de la sous-couche MAC
+5.1 Ethernet
+
+Le protocole Ethernet est le plus utilisé pour les réseaux locaux (LAN). Dans ce protocole :
+
+    Les données sont encapsulées dans des trames Ethernet.
+    Il utilise le CSMA/CD pour la gestion des collisions dans les réseaux filaires.
+
+5.2 Wi-Fi (802.11)
+
+Le Wi-Fi est un protocole sans fil basé sur la norme 802.11 de l’IEEE. Il utilise le CSMA/CA pour gérer l'accès au média et éviter les collisions dans les réseaux sans fil.
+5.3 Autres Protocoles MAC :
+
+    Token Ring : Utilise un jeton qui circule dans le réseau, et seul l'appareil qui possède le jeton peut envoyer des données.
+    FDDI (Fiber Distributed Data Interface) : Utilise une approche similaire à Token Ring, mais pour les réseaux à fibre optique.
+
+6. Structure d'une trame Ethernet (Frame)
+
+Pour comprendre comment les données sont envoyées au niveau de la sous-couche MAC, il est important de voir la structure d’une trame Ethernet. Une trame est une unité de données transmise sur un réseau local. Elle inclut les éléments suivants :
+
+    Préambule : Séquence de bits qui annonce l’arrivée d’une trame.
+    Adresse MAC de destination : L'adresse de l'appareil destinataire.
+    Adresse MAC source : L'adresse de l'appareil émetteur.
+    Type/EtherType : Indique le type de données encapsulées (par exemple, IPv4 ou IPv6).
+    Données : Les données encapsulées de la couche supérieure (couche réseau).
+    CRC (Cyclic Redundancy Check) : Une valeur calculée utilisée pour vérifier l'intégrité des données.
+
+7. Les types d'accès au média (Topologies MAC)
+
+Les réseaux locaux peuvent adopter plusieurs topologies pour organiser le partage du média :
+
+    Bus (comme dans les anciens réseaux Ethernet partagés) : Tous les appareils sont connectés à un seul câble commun.
+    Anneau (utilisé par Token Ring) : Chaque appareil est connecté à deux autres appareils, formant un cercle.
+    Étoile (utilisé dans les réseaux Ethernet modernes avec des commutateurs) : Chaque appareil est connecté à un commutateur central.
+    Sans fil : Les appareils se connectent à un point d'accès Wi-Fi central.
+
+8. Résumé et points clés à retenir
+
+    La sous-couche MAC fait partie de la couche de liaison des données et gère l'accès au support physique dans un réseau.
+    Elle utilise des protocoles comme CSMA/CD et CSMA/CA pour éviter ou gérer les collisions lors de la transmission des données.
+    Les adresses MAC permettent d'identifier de façon unique chaque appareil dans un réseau local.
+    Les trames sont les unités de données envoyées sur un réseau, et elles contiennent des informations essentielles comme les adresses MAC source et destination.
+    Les réseaux Ethernet et Wi-Fi sont les principaux protocoles qui reposent sur la sous-couche MAC pour le contrôle de l’accès au média.

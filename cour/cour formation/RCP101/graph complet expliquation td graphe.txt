@@ -1,0 +1,20 @@
+Pour qu'un graphe soit complet, chaque paire de sommets doit être reliée par une arête. Dans le graphe que tu as décrit, examinons les sommets et leurs connexions :
+
+A est relié à : F, B, C, D
+B est relié à : A, F, E, C, D
+C est relié à : B, A, D
+D est relié à : C, B, A, E
+E est relié à : D, B
+F est relié à : A, B
+Il y a 6 sommets (A, B, C, D, E, F). Dans un graphe complet avec 6 sommets, chaque sommet doit être connecté à 5 autres sommets (total de 15 arêtes). Vérifions les connexions :
+
+A est relié à 4 sommets.
+B est relié à 5 sommets.
+C est relié à 3 sommets.
+D est relié à 4 sommets.
+E est relié à 2 sommets.
+F est relié à 2 sommets.
+Puisque certains sommets n'ont pas de connexion avec tous les autres (par exemple, E et F ne sont pas reliés à C et A), le graphe n'est pas complet.
+
+Conclusion
+Le graphe n'est pas complet car certains sommets ne sont pas reliés entre eux.

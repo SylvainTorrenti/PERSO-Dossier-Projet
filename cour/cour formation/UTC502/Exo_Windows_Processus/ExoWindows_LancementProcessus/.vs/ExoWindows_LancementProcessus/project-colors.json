@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3d0f536c-6090-4bec-a30f-ca7eedff0b5c": {
+      "ProjectGuid": "3d0f536c-6090-4bec-a30f-ca7eedff0b5c",
+      "DisplayName": "ExoWindows_LancementProcessus",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

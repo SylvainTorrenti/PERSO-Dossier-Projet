@@ -1,0 +1,22 @@
+// ------------------------------------------------------------------------
+//		Ce programme permet d'afficher sur la console les Nombres pairs
+// ------------------------------------------------------------------------
+
+// ---- Fichiers à inclure
+#include <stdio.h>
+
+// -------------------------------------------------------
+//		Programme Principal
+// -------------------------------------------------------
+int main()
+{
+	int i;
+	printf("\t-> Debut Processus Pair\n");
+	for (i = 0; i < 101; i = i + 2)
+	{
+		printf("\t%d \n", i);
+	}
+	printf("\t-> FIN Processus Pair\n");
+	return(0);
+}
+

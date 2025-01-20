@@ -1,0 +1,16 @@
+A 					Couche application (7)
+Peine 				Couche Présentation (6)
+Serré, 				Couche Session (5)
+Tu 					Couche Transport (4)
+Rends 				Couche Réseau (3)
+Le 					Couche Liaison de données (2)
+Portefeuille		Couche Physique (1)
+
+
+Petit 				Couche Physique (1)
+Lapin 				Couche Liaison de données (2)
+Rose 				Couche Réseau (3)
+Trouvé 				Couche Transport (4)
+à la S.				Couche Session (5)
+P.					Couche Présentation (6)
+A					Couche application (7)
