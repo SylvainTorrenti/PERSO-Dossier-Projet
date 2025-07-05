@@ -1,0 +1,12 @@
+select * from pilote
+where upper(nom) like '%DEJEAN%';
+
+update vol_realise
+set fk_numpilote = 999
+where fk_numpilote = 10;
+
+delete from pilote
+where numpilote = 10;
+
+select nom , salaire from pilote
+where salaire >= 19000::money and salaire<= 23000::money;
