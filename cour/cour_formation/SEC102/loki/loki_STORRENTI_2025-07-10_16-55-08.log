@@ -1,0 +1,18 @@
+20250710T14:55:08Z STORRENTI LOKI: Notice: MODULE: Init MESSAGE: Starting Loki Scan VERSION: 0.51.0 SYSTEM: STORRENTI TIME: 20250710T14:55:08Z PLATFORM: 10 10.0.26100 SP0 Multiprocessor Free PROC: Intel64 Family 6 Model 183 Stepping 1, GenuineIntel ARCH: 64bit WindowsPE
+20250710T14:55:08Z STORRENTI LOKI: Notice: MODULE: PESieve MESSAGE: PE-Sieve successfully initialized BINARY: C:\Users\torrs\Documents\GitHub\Dossier-Projet\cour\cour formation\SEC102\loki\tools\pe-sieve64.exe SOURCE: https://github.com/hasherezade/pe-sieve
+20250710T14:55:08Z STORRENTI LOKI: Notice: MODULE: Init MESSAGE: The 'signature-base' subdirectory doesn't exist or is empty. Trying to retrieve the signature database automatically.
+20250710T14:55:08Z STORRENTI LOKI: Info: MODULE: Update MESSAGE: Starting separate updater process ...
+20250710T14:55:18Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: File Name Characteristics initialized with 3786 regex patterns
+20250710T14:55:18Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: C2 server indicators initialized with 1773 elements
+20250710T14:55:18Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: Malicious MD5 Hashes initialized with 6000 hashes
+20250710T14:55:18Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: Malicious SHA1 Hashes initialized with 1602 hashes
+20250710T14:55:18Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: Malicious SHA256 Hashes initialized with 2298 hashes
+20250710T14:55:18Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: False Positive Hashes initialized with 0 hashes
+20250710T14:55:18Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: Processing YARA rules folder C:\Users\torrs\Documents\GitHub\Dossier-Projet\cour\cour formation\SEC102\loki\signature-base\yara
+20250710T14:55:25Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: Initializing all YARA rules at once (composed string of all rule files)
+20250710T14:55:27Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: Initialized 1018 Yara rules
+20250710T14:55:27Z STORRENTI LOKI: Notice: MODULE: Init MESSAGE: Program should be run 'as Administrator' to ensure all access rights to process memory and file objects.
+20250710T14:55:27Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: Setting LOKI process with PID: 27160 to priority IDLE
+20250710T14:55:27Z STORRENTI LOKI: Notice: MODULE: Init MESSAGE: Skipping process memory check. User has no admin rights.
+20250710T14:55:27Z STORRENTI LOKI: Info: MODULE: FileScan MESSAGE: Scanning Path C:\ ...  
+20250710T15:03:09Z STORRENTI LOKI: Info: MODULE: Init MESSAGE: LOKI's work has been interrupted by a human. Returning to Asgard.
