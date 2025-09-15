@@ -1,0 +1,10 @@
+<fastfind version="Test 2.0">
+<script src="moz-extension://8ba385c1-eeb4-40d5-bb3f-a2bcf6ce3c9b/js/elephant.js"/>
+	<filesystem>
+		<location shadows="yes">C:\tmp</location>
+		<location shadows="yes">C:\Users\torrs\Desktop</location>		
+		<ntfs_find name_match="*.dll" md5="C7E526A5B820525C561F6C7D21C84951"/>
+		<ntfs_find name_match="*.txt" contains="superFakeRansomware@google.com"/>
+		<ntfs_find contains="192.168.234.299"/>		
+	</filesystem>
+</fastfind>

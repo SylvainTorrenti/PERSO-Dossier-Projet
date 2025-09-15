@@ -1,0 +1,196 @@
+Linux debian 5.10.0-16-amd64 #1 SMP Debian 5.10.127-1 (2022-06-30) x86_64 GNU/Linux
+ 17:29:05 up 15 min,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+jafar    tty1     -                17:14    6:33   0.08s  0.00s -bash
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ 
+cat /etc/passwd
+
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:109::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:110:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+avahi-autoipd:x:105:114:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+jafar:x:1000:1000:jafar,,,:/home/jafar:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+mysql:x:107:115:MySQL Server,,,:/nonexistent:/bin/false
+Debian-exim:x:108:116::/var/spool/exim4:/usr/sbin/nologin
+$ 
+ls -l /home/
+
+total 4
+drwxr-xr-x 5 jafar jafar 4096 Sep 20 11:29 jafar
+$ 
+ls -l /home/jafar/
+
+total 20
+-rw-r--r-- 1 jafar jafar  200 Jul 21  2022 flag.zip
+-rw-r--r-- 1 jafar jafar 2349 Sep 20 11:29 slowloris.py
+-rw-r--r-- 1 jafar jafar 4062 Sep 13  2022 slowloris.py~
+-rw-r--r-- 1 jafar jafar  640 Sep 12  2022 srv_ray.py
+-rw-r--r-- 1 root  root  1057 Sep 13  2022 test.py
+$ 
+cd /var/www/html/
+
+$ 
+ls -l
+
+total 17260
+drwxr-xr-x 3 root root     4096 Jul 25  2022 admin36287451
+drwxr-xr-x 2 root root     4096 Jul 21  2022 backup
+-rw-r--r-- 1 root root      868 Jul 21  2022 hello.html
+-rw-r--r-- 1 root root    10701 Jul 20  2022 index.html
+-rw-r--r-- 1 root root      552 Jul 21  2022 index.php
+drwxr-xr-x 3 root root     4096 Mar 16 17:17 tinyfilemanager
+drwxrwxrwx 5 root root     4096 Feb  2 08:07 wordpress
+-rw-r--r-- 1 root root 17635580 May 10  2021 wordpress-5.7.1-fr_FR.zip
+$ 
+cd wordpress
+
+$ 
+ls -l
+
+total 216
+-rwxrwxrwx  1 root     root       405 Feb  6  2020 index.php
+-rwxrwxrwx  1 root     root     19915 Jan  1  2021 license.txt
+-rwxrwxrwx  1 root     root      8852 May 10  2021 readme.html
+-rwxrwxrwx  1 root     root      7165 Jan 21  2021 wp-activate.php
+drwxrwxrwx  9 root     root      4096 May 10  2021 wp-admin
+-rwxrwxrwx  1 root     root       351 Feb  6  2020 wp-blog-header.php
+-rwxrwxrwx  1 root     root      2328 Feb 17  2021 wp-comments-post.php
+-rwxrwxrwx  1 root     root      3538 May 10  2021 wp-config-sample.php
+-rwxrwxrwx  1 www-data www-data  3833 Jan 19 14:41 wp-config.php
+drwxrwxrwx  6 root     root      4096 Jan 31 14:44 wp-content
+-rwxrwxrwx  1 root     root      3939 Jul 30  2020 wp-cron.php
+drwxrwxrwx 25 root     root     12288 May 10  2021 wp-includes
+-rwxrwxrwx  1 root     root      2496 Feb  6  2020 wp-links-opml.php
+-rwxrwxrwx  1 root     root      3313 Jan 10  2021 wp-load.php
+-rwxrwxrwx  1 root     root     44994 Apr  4  2021 wp-login.php
+-rwxrwxrwx  1 root     root      8509 Apr 14  2020 wp-mail.php
+-rwxrwxrwx  1 root     root     21125 Feb  2  2021 wp-settings.php
+-rwxrwxrwx  1 root     root     31328 Jan 27  2021 wp-signup.php
+-rwxrwxrwx  1 root     root      4747 Oct  8  2020 wp-trackback.php
+-rwxrwxrwx  1 root     root      3236 Jun  8  2020 xmlrpc.php
+$ 
+cat wp-config.php 
+
+<?php
+/**
+ * La configuration de base de votre installation WordPress.
+ *
+ * Ce fichier est utilis.. par le script de cr..ation de wp-config.php pendant
+ * le processus d...installation. Vous n...avez pas .. utiliser le site web, vous
+ * pouvez simplement renommer ce fichier en ....wp-config.php.... et remplir les
+ * valeurs.
+ *
+ * Ce fichier contient les r..glages de configuration suivants..:
+ *
+ * R..glages MySQL
+ * Pr..fixe de table
+ * Cl..s secr..tes
+ * Langue utilis..e
+ * ABSPATH
+ *
+ * @link https://fr.wordpress.org/support/article/editing-wp-config-php/.
+ *
+ * @package WordPress
+ */
+
+// ** R..glages MySQL - Votre h..bergeur doit vous fournir ces informations. ** //
+/** Nom de la base de donn..es de WordPress. */
+define( 'DB_NAME', 'wordpress' );
+
+/** Utilisateur de la base de donn..es MySQL. */
+define( 'DB_USER', 'jafar' );
+
+/** Mot de passe de la base de donn..es MySQL. */
+define( 'DB_PASSWORD', '3b3f6598d8f964519e8dff4ef6943b78' );
+
+/** Adresse de l...h..bergement MySQL. */
+define( 'DB_HOST', 'localhost' );
+
+/** Jeu de caract..res .. utiliser par la base de donn..es lors de la cr..ation des tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/**
+ * Type de collation de la base de donn..es.
+ * N...y touchez que si vous savez ce que vous faites.
+ */
+define( 'DB_COLLATE', '' );
+
+/**#@+
+ * Cl..s uniques d...authentification et salage.
+ *
+ * Remplacez les valeurs par d..faut par des phrases uniques !
+ * Vous pouvez g..n..rer des phrases al..atoires en utilisant
+ * {@link https://api.wordpress.org/secret-key/1.1/salt/ le service de cl..s secr..tes de WordPress.org}.
+ * Vous pouvez modifier ces phrases .. n...importe quel moment, afin d...invalider tous les cookies existants.
+ * Cela forcera ..galement tous les utilisateurs .. se reconnecter.
+ *
+ * @since 2.6.0
+ */
+define( 'AUTH_KEY',         'kHO6P+p;Bdsz?x^i8C]Cii!Yqz~~p&^,;K+3lQ~ <r+AW<&3EB%6D@vC?{k5a#gJ' );
+define( 'SECURE_AUTH_KEY',  'Qhg!0)4STZ1[a$%C5+QH^;|+Jukpeu}e :la@oiC}9<nQY4]#Kzo.xN-+6DOp<mS' );
+define( 'LOGGED_IN_KEY',    'Wy>EWKLli`yz`^PZR1m<Vz`9?-d(%C6_Lb?aK6[%=jqoyr1`TTo^I#M$D$A7=<Ku' );
+define( 'NONCE_KEY',        'T)Bk6ck6 CMx;nK<R`?O6RGcTwvq[RFFdP:>::.>PABa,ys#u+iiWEd=n2)CiiIG' );
+define( 'AUTH_SALT',        'HZR<Kg5waQzCLLvK]LBLX~@2EgmpUn%u|t:g%WA:q#E:ZD/fY/XiokT<|IA`_[* ' );
+define( 'SECURE_AUTH_SALT', '?WD/r}G1QvoS%YeP3JCd:#t dqy/?eTsIgTO#Bi_Kg6={]@@8Sq{Y?J1fk5a#E:6' );
+define( 'LOGGED_IN_SALT',   'Aha8l. amMN&X@nr,!NAQIH3()% #x6q2HPGaN%QV0P1O!@yaFjzkjb)Gu-*._`#' );
+define( 'NONCE_SALT',       'T$dZkNJUa^fnn~!:fPK~LuIB7D?+)pRj}f>mF>_srSl%B.-aHv`J|5,F}ITOC@CS' );
+/**#@-*/
+
+/**
+ * Pr..fixe de base de donn..es pour les tables de WordPress.
+ *
+ * Vous pouvez installer plusieurs WordPress sur une seule base de donn..es
+ * si vous leur donnez chacune un pr..fixe unique.
+ * N...utilisez que des chiffres, des lettres non-accentu..es, et des caract..res soulign..s..!
+ */
+$table_prefix = 'wp_';
+
+/**
+ * Pour les d..veloppeurs : le mode d..boguage de WordPress.
+ *
+ * En passant la valeur suivante .. "true", vous activez l...affichage des
+ * notifications d...erreurs pendant vos essais.
+ * Il est fortement recommand.. que les d..veloppeurs d...extensions et
+ * de th..mes se servent de WP_DEBUG dans leur environnement de
+ * d..veloppement.
+ *
+ * Pour plus d...information sur les autres constantes qui peuvent ..tre utilis..es
+ * pour le d..boguage, rendez-vous sur le Codex.
+ *
+ * @link https://fr.wordpress.org/support/article/debugging-in-wordpress/
+ */
+define( 'WP_DEBUG', false );
+
+/* C...est tout, ne touchez pas .. ce qui suit ! Bonne publication. */
+
+/** Chemin absolu vers le dossier de WordPress. */
+if ( ! defined( 'ABSPATH' ) )
+  define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+
+/** R..glage des variables de WordPress et de ses fichiers inclus. */
+require_once( ABSPATH . 'wp-settings.php' );
+$ 

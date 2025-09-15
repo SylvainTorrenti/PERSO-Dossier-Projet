@@ -1,0 +1,25 @@
+cat /etc/passwd
+Récupére les info des comptes utilisateurs
+
+ls -l /home/jafar/
+affiche le contenu de l'utilisateur jafar
+
+cd /var/www/html/
+change de repertoire pour aller dans celui qui stock generalement les fichier web
+
+ls -l
+liste tout les fichiers présent
+
+cd wordpress
+va dans le dossier wordpress
+
+ls -l
+liste les fichiers présent
+
+cat wp-config.php
+lit le fichier de configuration de wordpress qui permet d'avoir acces a la bdd
+
+
+L'attaque se déroule
+Explore les utilisateurs ce qui permet d'accède au serveur web et de recuperer un site WordPress.
+Ce qui lui donne les identifiants.

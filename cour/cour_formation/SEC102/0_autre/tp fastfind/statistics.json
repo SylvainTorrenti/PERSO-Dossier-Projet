@@ -1,0 +1,32 @@
+{
+    "version": "1.0",
+    "dfir-orc": {
+        "FastFind": {
+            "statistics": {
+                "ntfs_find": [
+                    {
+                        "description": "<ntfs_find name_match=\"*.dll\" md5=\"C7E526A5B820525C561F6C7D21C84951\" />",
+                        "match_time": 0,
+                        "match_read": 28,
+                        "match": 1,
+                        "miss": 843966
+                    },
+                    {
+                        "description": "<ntfs_find name_match=\"*.txt\" contains=\"superFakeRansomware@google.com\" />",
+                        "match_time": 0,
+                        "match_read": 282,
+                        "match": 1,
+                        "miss": 843966
+                    },
+                    {
+                        "description": "<ntfs_find contains=\"192.168.234.299\" />",
+                        "match_time": 0,
+                        "match_read": 4143793,
+                        "match": 1,
+                        "miss": 843966
+                    }
+                ]
+            }
+        }
+    }
+}

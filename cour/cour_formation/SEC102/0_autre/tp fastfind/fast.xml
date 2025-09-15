@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fast_find computer="STorrenti" os="Microsoft Windows 10  (build 26100), 64-bit" role="WorkStation">
+  <filesystem description="Name matches *.txt, Contains=superFakeRansomware@google.com">
+    <record frn="0x00050000000151BD" record_in_use="" volume_id="0xC8A05A09A059FE7E" snapshot_id="{00000000-0000-0000-0000-000000000000}">
+      <standardinformation creation="2025-08-18 13:40:57.523" lastmodification="2023-05-20 16:57:10.000" lastaccess="2025-08-18 14:06:04.778" lastentrychange="2025-08-18 14:07:04.040" attributes="A............" />
+      <filename fullname="\Users\torrs\Desktop\NOTEDE~1.TXT" parentfrn="0x00030000000521F3" creation="2025-08-18 13:40:57.523" lastmodification="2023-05-20 16:57:10.000" lastaccess="2025-08-18 13:40:57.524" lastentrychange="2025-08-18 13:40:57.525" />
+      <filename fullname="\Users\torrs\Desktop\Note de rançon.txt" parentfrn="0x00030000000521F3" creation="2025-08-18 13:40:57.523" lastmodification="2023-05-20 16:57:10.000" lastaccess="2025-08-18 13:40:57.524" lastentrychange="2025-08-18 13:40:57.525" />
+      <data name="" filesize="111" MD5="84458E7E37C52697015025D1C28A61DE" SHA1="196DC2D3B6DAAFBAD201612AA70B55DB92E8537A" SHA256="125E6B45A63E2EA828CCE15A29F88848DA1C47F31073CF97ADD01BADD629F890" />
+    </record>
+  </filesystem>
+  <filesystem description="Name matches *.dll, MD5=C7E526A5B820525C561F6C7D21C84951">
+    <record frn="0x00030000000151BE" record_in_use="" volume_id="0xC8A05A09A059FE7E" snapshot_id="{00000000-0000-0000-0000-000000000000}">
+      <standardinformation creation="2025-08-18 13:40:57.525" lastmodification="2023-05-20 16:55:54.000" lastaccess="2025-08-18 13:40:57.527" lastentrychange="2025-08-18 14:06:11.578" attributes="A............" />
+      <filename fullname="\tmp\SUPERP~1.DLL" parentfrn="0x0094000000000F44" creation="2025-08-18 13:40:57.525" lastmodification="2023-05-20 16:55:54.000" lastaccess="2025-08-18 13:40:57.527" lastentrychange="2025-08-18 13:40:57.527" />
+      <filename fullname="\tmp\superpascool.dll" parentfrn="0x0094000000000F44" creation="2025-08-18 13:40:57.525" lastmodification="2023-05-20 16:55:54.000" lastaccess="2025-08-18 13:40:57.527" lastentrychange="2025-08-18 13:40:57.527" />
+      <data name="" filesize="14" MD5="C7E526A5B820525C561F6C7D21C84951" SHA1="678F387817D0127322A2C90722D1D564105D8F44" SHA256="3FA31F08DF5326FA42F32AEDFF4D5671F397E845BFF237652EB7402630E70188" />
+    </record>
+  </filesystem>
+  <filesystem description="Contains=192.168.234.299">
+    <record frn="0x00030000000151BF" record_in_use="" volume_id="0xC8A05A09A059FE7E" snapshot_id="{00000000-0000-0000-0000-000000000000}">
+      <standardinformation creation="2025-08-18 13:40:57.527" lastmodification="2023-05-20 16:58:06.000" lastaccess="2025-08-18 13:40:57.527" lastentrychange="2025-08-18 14:18:04.259" attributes="A............" />
+      <filename fullname="\tmp\tmp.txt" parentfrn="0x0094000000000F44" creation="2025-08-18 13:40:57.527" lastmodification="2023-05-20 16:58:06.000" lastaccess="2025-08-18 13:40:57.527" lastentrychange="2025-08-18 13:40:57.527" />
+      <data name="" filesize="60" MD5="3A26DDDD2D412B2F8CD49E2AD2E9E90C" SHA1="CD8D0CE0983F62EEE475052DAF9C596903BEAD82" SHA256="8B61A8ADEA03044B98279ACA0A5D5F2BC99080EE8680707551D4CFF7F41F67A1" />
+    </record>
+  </filesystem>
+</fast_find>
